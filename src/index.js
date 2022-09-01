@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {createStore, applyMiddleware, compose } from 'redux'
 import reducer from './reducers'
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 
 const logger = store => next => action => {
   console.group(action.type)
